@@ -1,19 +1,25 @@
 {
-  "active": false,
-  "hostname": "xyrdp-samp-9",
-  "os": "Microsoft Windows Server 2022 Datacenter",
-  "os_build": "10.0.20348",
-  "os_style": "Windows 10 look",
+  "active": true,
+  "hostname": "rdpfree-10",
+  "os": "Microsoft Windows Server 2025 Datacenter",
+  "os_build": "10.0.26100",
+  "os_style": "Native Windows",
+  "hardware": {
+    "disk_free_gb": 31.4,
+    "cpu_threads": 4,
+    "ram_gb": 16.0
+  },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-15T12:34:17Z",
-  "expires_at": "2026-10-15T18:29:17Z",
+  "started_at": "2026-10-15T12:40:34Z",
+  "expires_at": "2026-10-15T18:35:34Z",
   "duration_menit": 355,
-  "run_id": "38735626401",
-  "run_number": "9",
-  "run_url": "https://github.com/muhammadfarhanaffandi2-create/XyRDP/actions/runs/38735626401",
+  "run_id": "38736406718",
+  "run_attempt": "1",
+  "run_number": "10",
+  "run_url": "https://github.com/muhammadfarhanaffandi2-create/XyRDP/actions/runs/38736406718",
   "mode": "bersih+win10",
   "xydesk": {
     "host": "ok",
@@ -21,8 +27,9 @@
     "multisession": "ok",
     "avc444": "ok",
     "fontsmoothing": "ok (ClearType profil Default)",
-    "audio_out": "ok (fDisableAudio=)",
-    "audio_mic": "ok (fDisableAudioCapture=0)",
+    "audio_out": "ok (policy fDisableAudio=, WinStations=)",
+    "audio_mic": "ok (policy fDisableAudioCapture=, WinStations=0) - mic HP redirect aktif, Allow di HP",
+    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=) - wallpaper RDP tampil, cek client Experience→Wallpaper ON",
     "firewall": "tcp3389=True udp3389=True udp4433=True",
     "services": "ok",
     "rdp_ready": "127.0.0.1 (handshake OK)",
@@ -31,58 +38,20 @@
     "akses": "(menyusul)",
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
-  "grafis": {
-    "mode": "software",
-    "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "debug": "",
-    "adapters": "Microsoft Hyper-V Video",
-    "mesa": "26.2.4",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "dir": "C:\\XyRDP\\grafis"
-  },
-  "samp": {
-    "note": "dilewati sesuai config",
-    "status": "skip"
-  },
   "akses": {
-    "mode": "tailscale",
-    "rustdesk": {
-      "status": "skip",
-      "service": null,
-      "server": "rs-ny.rustdesk.com / rs-sg.rustdesk.com (server publik RustDesk)",
-      "client": "Unduh app RustDesk (gratis) -> masukkan ID + password",
-      "id": ""
-    },
     "tailscale": {
-      "status": "ok",
-      "ip": "100.114.243.35",
-      "magicdns": "xyrdp-samp-9.tail0ec94e.ts.net.",
-      "hostname": "xyrdp-samp-9",
-      "funnel": "tidak aktif",
-      "funnel_addr": "",
-      "note": "Di HP: pasang app Tailscale + login akun yang sama, lalu Host=100.114.243.35 Port=3389 di XyDesk Remote (atau mstsc). Funnel: tidak aktif"
+      "magicdns": "rdpfree-10.tail0ec94e.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "hostname": "rdpfree-10",
+      "ip": "100.95.15.74",
+      "status": "ok"
     },
-    "tunnel": {
-      "status": "skip",
-      "provider": "",
-      "rdp_local": "",
-      "selftest": "",
-      "outside": "",
-      "note2": "",
-      "note": "Isi Host+Port ini di XyDesk Remote (Koneksi RDP) atau mstsc; user xyadmin",
-      "host": "",
-      "port": 0,
-      "address": ""
-    }
+    "mode": "tailscale"
   },
-  "memory": {
-    "total_mb": 16379,
-    "available_mb": 13664,
-    "measured": "akhir setup"
-  },
-  "stopped_at": "2026-10-15T12:39:04Z"
+  "media": {
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "microphone": "rdp_capture_enabled",
+    "audio_output": "rdp_playback_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+  }
 }
