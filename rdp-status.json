@@ -116,5 +116,6 @@
     "firewall7777": "verified_TCP_UDP_inbound_rules; not_public_forwarding",
     "errors": [],
     "public_port": false
-  }
+  },
+  "heartbeat_at": "2026-10-15T12:51:03.0045725Z"
 }
