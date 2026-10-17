@@ -1,0 +1,42 @@
+{
+  "active": true,
+  "hostname": "rdpfree-16",
+  "os": "Microsoft Windows Server 2025 Datacenter",
+  "os_build": "10.0.26100",
+  "os_style": "Native Windows",
+  "hardware": {
+    "disk_free_gb": 31.3,
+    "ram_gb": 16.0,
+    "cpu_threads": 4
+  },
+  "rdp_port": 3389,
+  "rdp_user": "xyadmin",
+  "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
+  "rdp_denyts": true,
+  "started_at": "2026-10-17T03:40:50Z",
+  "expires_at": "2026-10-17T09:22:50Z",
+  "duration_menit": 342,
+  "run_id": "38999692863",
+  "run_attempt": "1",
+  "run_number": "16",
+  "run_url": "https://github.com/muhammadfarhanaffandi2-create/XyRDP/actions/runs/38999692863",
+  "mode": "bersih+win10",
+  "akses": {
+    "mode": "tailscale",
+    "tunnel": {
+      "outside": "tailscale",
+      "status": "ok",
+      "host": "100.81.137.59",
+      "port": 3389,
+      "address": "100.81.137.59:3389",
+      "selftest": "ok"
+    },
+    "tailscale": {
+      "magicdns": "rdpfree-16.tail0ec94e.ts.net.",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "status": "ok",
+      "hostname": "rdpfree-16",
+      "ip": "100.81.137.59"
+    }
+  }
+}
